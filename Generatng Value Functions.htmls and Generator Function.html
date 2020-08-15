@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<Script>
+
+'use strict';
+
+//code  here
+
+function* getNums (){
+ console.log('returning first value');
+    yield 1;
+ console.log('returning second value');  
+    yield 2;
+ console.log('returning third value');   
+    yield 3;
+}
+for (let num of getNums()){
+    console.log ('processing num: ',num);
+}
+
+</Script>
